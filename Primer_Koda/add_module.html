@@ -1,0 +1,57 @@
+<head>  
+	<title>Insert data to PostgreSQL with php - creating a simple web application</title>  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<style>  
+p{
+  font-family: 'Times New Roman', Times, serif; 
+  font-size: 25pt;  
+   }   
+.lier {
+background: url(disp.jpg) no-repeat;
+background-size: 100%; /* Современные браузеры */
+}  
+.solidblockmenu {
+margin : 0;
+padding : 0;
+float : left;
+font : bold 12px Arial;
+width : 100%;
+border : 1px solid #113523;
+border-width : 1px 0;
+background : black url(blockdefault.jpg) repeat-x center center;
+}
+.solidblockmenu li {
+display : inline;
+}
+.solidblockmenu li a {
+float : left;
+color : #C9EDDB;
+padding : 9px 10px;
+text-decoration : none;
+border-right : 1px solid #24714A;
+}
+.solidblockmenu li a:visited {
+color : #C9EDDB;
+}
+.solidblockmenu li a:hover, .solidblockmenu li .current {
+color : #B5E6CD;
+background : transparent url(blockactive.jpg) repeat-x center center;
+}			 
+</style>  
+</head>  
+<body>  
+	<ul class="lier"> 
+		<h2>Add new module</h2>  
+	<ul class="solidblockmenu">
+		<li><a href="index.html">Back</a></li>
+	</ul>
+	<Br>
+	<form name="add" action="add_mod.php" method="POST" >  
+		<p>Name a new module:<Br>
+			<input type="text" style="font-size: 20px;" name="name" /><Br> IP_adress:<Br>
+			<input type="text" style="font-size: 20px;" name="ip_mod" /> <Br>
+			<input type="submit" style="font-size: 20px;"/> </p>
+	</form>  
+	</ul>  
+</body>  
+</html>  

@@ -1,0 +1,66 @@
+<!DOCTYPE html>  
+<head>  
+	<title>Insert data to PostgreSQL with php - creating a simple web application</title>  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<style>
+p{
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 25pt;  
+   }   
+.lier {
+background: url(disp.jpg) no-repeat;
+background-size: 100%; /* Современные браузеры */
+} 
+.solidblockmenu {
+margin : 0;
+padding : 0;
+float : left;
+font : bold 14px Arial;
+width : 100%;
+border : 1px solid #113523;
+border-width : 1px 0;
+background : url(blockdefault.jpg);
+}
+.solidblockmenu li {
+display : inline;
+}
+.solidblockmenu li a {
+float : left;
+color : #C9EDDB;
+padding : 9px 10px;
+text-decoration : none;
+border-right : 1px solid #24714A;
+}
+.solidblockmenu li a:visited {
+color : #C9EDDB;
+}
+.solidblockmenu li a:hover, .solidblockmenu li .current {
+color : #B5E6CD;
+background : transparent url(blockactive.jpg) repeat-x center center;
+}			 
+</style>  
+</head>  
+<body>  
+	<ul class="lier">  
+	<h2>Введите данные для получения информации</h2> 
+	<ul class="solidblockmenu"> 
+		<li><a href="script.php">Список модулей</a></li> 
+		<li><a href="add_module.html">Добавить новый модуль</a></li> 
+		<li><a href="form_avtor.html">Статистика</a></li> 
+		<li><a href="form_avtor.html">Регистрация/Авторизция</a></li> 
+	</ul>
+	<Br>
+	<form name="insert" action="insert.php" method="POST" >  
+	<p>Номер порта:<Br>
+		<input type="text" name="port" style="font-size: 20px;" value="1001"/><Br> IP-адрес базы данных:<Br>
+		<input type="text" name="ip_db" style="font-size: 20px;" value="192.168.101.250"/> <Br>Название базы данных:<Br>
+		<input type="text" name="name" style="font-size: 20px;" value="qwer" /><Br> Имя пользователя:<Br>
+		<input type="text" name="user" style="font-size: 20px;" value="postgres" /><Br>  Пароль:<Br>
+		<input type="text" name="pass" style="font-size: 20px;" value="1"/><Br> 
+		<input type="submit" style="font-size: 20px;" /> 
+	</p>
+	</form>  
+	</ul>
+</body>  
+</html>  
+ 
